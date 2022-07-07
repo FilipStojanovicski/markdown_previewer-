@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link href="prism.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <title>Markdown Previewer</title>
+  </head>
+  <body>
+
+    <!-- We will put our React component inside this div. -->
+    <div id="app">
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Marked Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.17/marked.min.js" integrity="sha512-vSD33WvMJMZwnOWxigzY4MmmUnGqY4APr91CZ4h3UTJ29AmZ8vW3WOwKycGptx7ow1f2SDYKLchv/qKnYHWI+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Prism Library -->
+    <script src="prism.js"></script>
+
+    <!-- Load our React component. -->
+    <script src="markdown_previewer.js"></script>
+
+    <!-- FreeCodeCamp Tests -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+</html>
